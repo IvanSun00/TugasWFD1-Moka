@@ -5,8 +5,8 @@
   }
 </style>
 
-<header class="fixed z-[1000] w-screen opacity-90">
-  <nav class="w-full md:w-[75vw] mx-auto bg-transparent  border-b-2 border-gray-100 border-opacity-50 dark:bg-gray-900 navbar shadow-custom-md font-dm px-5 pt-10 pb-5">
+<header class="fixed z-[1000] w-screen opacity-90 ">
+  <nav class="w-full md:w-[75vw] mx-auto bg-transparent  border-b-2 border-gray-100 border-opacity-50 dark:bg-gray-900 navbar  font-dm px-5 pt-10 pb-5">
     <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto 2xl:max-w-[90vw]">
         <a href="" class="flex items-center space-x-4 rtl:space-x-reverse">
             <img src="{{ asset('img/moka-white.png') }}" class="moka-logo h-5" alt="Moka Logo" />
@@ -47,14 +47,14 @@
   $(document).ready(function() {
     $(window).on('scroll', function() {
       if ($(window).scrollTop() > 50) {
-        $('header').addClass('bg-white');
+        $('header').addClass('bg-white shadow-md');
         $('.nav-text').addClass('!text-gray-900');
         $('.moka-logo').attr('src', '{{ asset('img/moka-blue.png') }}');
         $('nav').removeClass('pt-10 pb-5').addClass('py-4');
         
 
       } else {
-        $('header').removeClass('bg-white');
+        $('header').removeClass('bg-white shadow-md');
         $('.nav-text').removeClass('!text-gray-900');
         $('.moka-logo').attr('src', '{{ asset('img/moka-white.png') }}');
         $('nav').removeClass('py-3').addClass('pt-10 pb-5');

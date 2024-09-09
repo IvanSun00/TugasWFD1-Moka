@@ -191,7 +191,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
 
         <!-- Kolom Kiri -->
-        <div class="" data-aos="fade-up">
+        <div class="" data-aos="flip-left">
             <img alt="Moka POS" src="{{ asset('img/section1-thumbnail-video.png') }}" class="rounded-lg object-cover w-3/4 mx-auto md:mx-0 md:ms-auto" >
         </div>
 
@@ -242,7 +242,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
 
         <!-- Kolom Kiri -->
-        <div class="" data-aos="fade-up">
+        <div class="" data-aos="flip-left">
             <img alt="Moka POS" src="{{ asset('img/section2-image1.jpeg') }}" class="rounded-lg object-cover w-1/2 mx-auto md:mx-0 md:ms-auto" >
         </div>
 
@@ -257,7 +257,7 @@
               Anda sehingga Anda bisa menjual 
               lebih banyak lagi. 
             </p>
-            <a href="#" class="text-sm text-primary-blue group">
+            <a href="#" class="text-sm text-primary-blue group" >
               <span class="me-3">Pelajari</span>
               <i class="fa-solid fa-arrow-right transform transition-transform duration-300 group-hover:translate-x-2"></i>
             </a>

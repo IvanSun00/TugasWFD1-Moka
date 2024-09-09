@@ -17,7 +17,7 @@
 @endsection
 
 @section('content')
-    <div class="Hero section relative min-h-[90svh] w-full flex justify-start pt-40 md:justify-center md:pt-48 ">
+    <div class="Hero section relative min-h-svh w-full flex justify-start pt-40 md:justify-center md:pt-48 ">
         <div class="overlay absolute inset-0 bg-black opacity-20 z-10 md:opacity-0"></div>
         <img src="{{ asset('img/contact-hero_1.jpg') }}" alt="first" class="absolute inset-0 w-full h-full object-cover z-0">
         <div class="mx-0 md:mx-auto w-[75vw] z-20 text-white  ps-5 ">
