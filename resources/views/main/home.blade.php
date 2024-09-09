@@ -191,12 +191,12 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
 
         <!-- Kolom Kiri -->
-        <div class="">
+        <div class="" data-aos="fade-up">
             <img alt="Moka POS" src="{{ asset('img/section1-thumbnail-video.png') }}" class="rounded-lg object-cover w-3/4 mx-auto md:mx-0 md:ms-auto" >
         </div>
 
         <!-- Kolom Kanan -->
-        <div class="px-3 flex flex-col mt-10 md:mt-0">
+        <div class="px-3 flex flex-col mt-10 md:mt-0" data-aos="fade-up">
           <div class="w-full mx-auto md:mx-0 md:me-auto bg-white max-w-md ">
             <h1 class="text-3xl font-bold text-black mb-3">Mulai dengan Moka</h1>
             <p class="text-md text-gray-700 mb-3"> 
@@ -242,12 +242,12 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
 
         <!-- Kolom Kiri -->
-        <div class="">
+        <div class="" data-aos="fade-up">
             <img alt="Moka POS" src="{{ asset('img/section2-image1.jpeg') }}" class="rounded-lg object-cover w-1/2 mx-auto md:mx-0 md:ms-auto" >
         </div>
 
         <!-- Kolom Kanan -->
-        <div class="px-3 flex flex-col justify-center mt-10 md:mt-0">
+        <div class="px-3 flex flex-col justify-center mt-10 md:mt-0" data-aos="fade-up">
           <div class="w-full mx-auto md:mx-0 md:me-auto  max-w-xs">
             <h3 class="text-sm font-bold mb-5">Moka Point of Sale</h3>
             <h1 class="text-3xl font-bold text-black mb-5">Kelola usaha offline Anda dengan Aplikasi Kasir Moka</h1>
@@ -268,17 +268,14 @@
       </div>
     </div>
   </section>
-
-
-  {{-- faq --}}
-
-
-
 @endsection
 
 @section('scripts')
 <script>
-  var swiper = new Swiper(".mySwiper", {
+  $(document).ready(function(){
+    AOS.init();
+
+    var swiper = new Swiper(".mySwiper", {
       simulateTouch: false,
       loop: true,
       navigation: {
@@ -291,5 +288,7 @@
         clickable: true,
       },
   });
-</>
+  });
+  
+</script>
 @endsection

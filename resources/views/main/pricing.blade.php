@@ -21,7 +21,7 @@
         <div class="flex  justify-center mb-5 mt-10 md:-mt-[25vh] px-5">
             <div class="flex gap-6 flex-col md:flex-row">
                 <!-- Basic Card -->
-                <div class="bg-blue-50 text-white rounded-lg  w-full max-w-md mx-auto md:w-64 md:mx-0   shadow-lg">
+                <div class="bg-blue-50 text-white rounded-lg  w-full max-w-md mx-auto md:w-64 md:mx-0   shadow-lg" data-aos="fade-up">
                     <div class="card_header text-center py-10 relative h-[25vh] bg-primary-blue rounded-t-lg">
                         <h2 class="text-2xl font-bold">Basic</h2>
                         <h3 class="text-3xl font-bold mb-1">Rp299.000</h3>
@@ -37,7 +37,7 @@
                 </div>
         
                 <!-- Pro Card  -->
-                <div class="bg-blue-50 text-white rounded-lg w-full max-w-md mx-auto md:w-64 md:mx-0 shadow-lg">
+                <div class="bg-blue-50 text-white rounded-lg w-full max-w-md mx-auto md:w-64 md:mx-0 shadow-lg" data-aos="fade-up">
                     <div class="card_header text-center py-10 relative h-[25vh] bg-primary-darkBlue rounded-t-lg">
                         <span class="absolute top-0 left-1/2 transform -translate-x-1/2 bg-green-500 text-xs px-5 py-2 rounded-b-md">Populer</span>
                         <h2 class="text-2xl font-bold">Pro</h2>
@@ -53,7 +53,7 @@
                 </div>
         
                 <!-- Enterprise Card -->
-                <div class="bg-blue-50 text-white rounded-lg w-full max-w-md mx-auto md:w-64 md:mx-0 shadow-lg">
+                <div class="bg-blue-50 text-white rounded-lg w-full max-w-md mx-auto md:w-64 md:mx-0 shadow-lg" data-aos="fade-up">
                     <div class="card_header text-center py-10 relative h-[25vh] bg-primary-blue rounded-t-lg">
                         <h2 class="text-2xl font-bold">Enterprise</h2>
                         <h3 class="text-3xl font-bold mb-1">Rp799.000</h3>
@@ -63,7 +63,7 @@
                         <p class="text-md font-bold mb-6">Paket terlengkap yang mendukung usaha Anda ke level yang lebih tinggi
                         </p>
                         <div class="cursor-pointer bg-primary-blue hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-full">
-                            Jadwalkan Demo
+                        Jadwalkan Demo
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
 
         <div class="content max-w-lg mx-auto md:mx-0 md:max-w-[70vw]">
             <section class="text-gray-700 body-font overflow-hidden">
-                <div class="container px-5 py-12 md:py-24 mx-auto flex flex-wrap">
+                <div class="container px-5 py-12 md:py-24 mx-auto flex flex-wrap" data-aos="fade-up">
                     <div class="lg:w-1/4 mt-48 hidden lg:block ">
                         <div class="mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden">
                             <p class="bg-gray-100 text-gray-900 h-32 text-left px-4 flex items-center justify-start -mt-px">Aplikasi Kasir Digital, Dashboard Laporan Real-Time, Manajemen Stok, Manajemen Promo, dan masih banyak lagi</p>
@@ -95,9 +95,9 @@
                         </div>
                     </div>
                     <div class="flex lg:w-3/4 w-full flex-wrap lg:border border-gray-300 rounded-lg">
-                    <div class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
                         {{-- basic --}}
-                        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+                    <div class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none" data-aos="fade-up">
+                        <div class="px-2 text-center h-48 flex flex-col items-center justify-center" >
                             <h2 class="text-3xl text-gray-900 font-medium leading-none mb-4 mt-2 text-left">Basic</h2>
                             <h2 class="text-4xl text-gray-900 font-medium leading-none mb-4 mt-2">Rp299.000</h2>
                             <span class="text-sm text-gray-600">Per outlet/bulan</span>
@@ -168,7 +168,7 @@
                     </div>
 
                     {{-- section pro --}}
-                    <div class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-primary-darkBlue relative">
+                    <div class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-primary-darkBlue relative" data-aos="fade-up">
                         <span class="bg-primary-darkBlue text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">Populer</span>
                         <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
                             <h2 class="text-3xl text-gray-900 font-medium leading-none mb-4 mt-2 text-left">Pro</h2>
@@ -246,7 +246,7 @@
                     </div>
 
                     {{-- enterprise --}}
-                    <div class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+                    <div class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none" data-aos="fade-up">
                         <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
                             <h2 class="text-3xl text-gray-900 font-medium leading-none mb-4 mt-2 text-left">Enterprise</h2>
                             <h2 class="text-4xl text-gray-900 font-medium leading-none mb-4 mt-2">Rp799.000</h2>
@@ -338,4 +338,7 @@
 @endsection
 
 @section('scripts')
+<script>
+    AOS.init();
+</script>
 @endsection
