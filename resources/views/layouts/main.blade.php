@@ -32,6 +32,7 @@
     @yield('styles')
 </head>
 <body>
+    @include('partials.loader')
     @include('partials.nav')
     
     @yield('content')

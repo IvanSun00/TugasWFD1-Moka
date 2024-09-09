@@ -5,7 +5,7 @@
   }
 </style>
 
-<header class="fixed z-[1000] w-screen">
+<header class="fixed z-[1000] w-screen opacity-90">
   <nav class="w-full md:w-[75vw] mx-auto bg-transparent  border-b-2 border-gray-100 border-opacity-50 dark:bg-gray-900 navbar shadow-custom-md font-dm px-5 pt-10 pb-5">
     <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto 2xl:max-w-[90vw]">
         <a href="" class="flex items-center space-x-4 rtl:space-x-reverse">
@@ -22,19 +22,19 @@
         </button>
         <div class="hidden w-full md:block md:w-auto md:mb-0" id="navbar-default">
             <ul
-                class="bg-blue my-3 md:my-0 font-medium flex flex-col md:p-0 border md:text-sm border-gray-100 rounded-lg  md:flex-row sm:space-x-8 lg:space-x-1 rtl:space-x-reverse md:mt-0 md:border-0">
+                class="bg-blue my-3 md:my-0 font-medium flex flex-col md:p-0 border md:text-sm border-gray-100 rounded-lg  md:flex-row sm:space-x-2 lg:space-x-1 rtl:space-x-reverse md:mt-0 md:border-0">
                 <li></li>
-                <li>
-                    <a href=""
-                        class="nav-text lg:text-lg  lg:mx-5 mx-1 block py-2 px-3 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 {{ $title == 'Home' ? '' : '' }}">Home</a>
+                <li >
+                    <a href="{{ route('home') }}"
+                        class="nav-text lg:text-lg  lg:mx-5 mx-1 block py-2 px-3 text-gray-900 md:text-white rounded hover:bg-sky-100 md:hover:bg-transparent md:border-0 md:p-0 hover:underline  {{ $title == 'Home' ? '' : '' }}">Home</a>
                 </li>
                 <li>
-                  <a href=""
-                      class="nav-text lg:text-lg  lg:mx-5 mx-1 block py-2 px-3 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 {{ $title == 'Home' ? '' : '' }}">Product</a>
+                  <a href="{{ route('pricing') }}"
+                      class="nav-text lg:text-lg  lg:mx-5 mx-1 block py-2 px-3 text-gray-900 md:text-white rounded hover:bg-sky-100 md:hover:bg-transparent md:border-0 md:p-0 hover:underline {{ $title == 'pricing' ? '' : '' }}">Pricing</a>
                 </li>
                 <li>
-                  <a href=""
-                      class="nav-text lg:text-lg  lg:mx-5 mx-1 block py-2 px-3 text-gray-900 md:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 {{ $title == 'Home' ? '' : '' }}">About Us</a>
+                  <a href="{{ route('contact') }}"
+                        class="nav-text lg:text-lg  lg:mx-5 mx-1 block py-2 px-3 text-gray-900 md:text-white rounded hover:bg-sky-100 md:hover:bg-transparent md:border-0 md:p-0 hover:underline {{ $title == 'contact' ? '' : '' }}">Contact Us</a>
                 </li>
               
             </ul>
@@ -62,14 +62,25 @@
     });
 
     $('.hamburger').click(function() {
-      $('#navbar-default').toggle();
+      if ($('#navbar-default').is(':visible')) {
+        $('#navbar-default').hide();
+        $('header').removeClass('bg-white');
+        $('.moka-logo').attr('src', '{{ asset('img/moka-white.png') }}');
+      } else {
+        $('#navbar-default').show();
+        $('header').addClass('bg-white');
+        $('.moka-logo').attr('src', '{{ asset('img/moka-blue.png') }}');
+
+      }
     });
 
     $(window).resize(function() {
         if ($(window).width() > 768) {
             $('#navbar-default').css('display', 'block');
+
         } else {
             $('#navbar-default').css('display', 'none');
+            
         }
     });
   });
