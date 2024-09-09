@@ -5,7 +5,7 @@
   }
 </style>
 
-<header class="fixed z-[1000] w-screen opacity-90 ">
+<header class="fixed z-[1000] w-screen opacity-90 px-4">
   <nav class="w-full md:w-[75vw] mx-auto bg-transparent  border-b-2 border-gray-100 border-opacity-50 dark:bg-gray-900 navbar  font-dm px-5 pt-10 pb-5">
     <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto 2xl:max-w-[90vw]">
         <a href="" class="flex items-center space-x-4 rtl:space-x-reverse">

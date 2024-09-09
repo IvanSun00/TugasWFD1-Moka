@@ -17,11 +17,12 @@
 @endsection
 
 @section('content')
+<div class="overflow-hidden">
     <div class="Hero section relative min-h-svh w-full flex justify-start pt-40 md:justify-center md:pt-48 ">
         <div class="overlay absolute inset-0 bg-black opacity-20 z-10 md:opacity-0"></div>
         <img src="{{ asset('img/contact-hero_1.jpg') }}" alt="first" class="absolute inset-0 w-full h-full object-cover z-0">
         <div class="mx-0 md:mx-auto w-[75vw] z-20 text-white  ps-5 ">
-        <h1 class="text-3xl md:text-4xl font-bold  text-left max-w-md md:max-w-lg mb-20">
+        <h1 class="text-4xl font-bold  text-left max-w-md md:max-w-lg mb-20">
             Halo! Apa yang bisa kami bantu?
         </h1>
         <div class="flex flex-col sm:flex-row space-x-0 space-y-4 sm:space-y-0 sm:space-x-4 text-center">
@@ -176,12 +177,12 @@
     
 
     {{-- moka dalam berita --}}
-    <section class="min-h-svh px-5 flex items-center" data-aos="fade-up">
+    <section class="min-h-svh px-5 flex items-center">
         <div class="mx-0 md:mx-auto md:w-[75vw] w-full">
-            <h1 class="text-2xl md:text-3xl font-bold">Moka Dalam Berita</h1>
+            <h1 class="text-2xl md:text-3xl font-bold"  data-aos="fade-right">Moka Dalam Berita</h1>
 
             {{-- card swiper --}}
-            <div class="swiper-container overflow-hidden py-10 ">
+            <div class="swiper-container overflow-hidden py-10 "  data-aos="fade-up">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide max-w-sm">
                         <div class="bg-white shadow-lg rounded-lg overflow-hidden">
@@ -289,14 +290,15 @@
         </div>
     </div>
     
+
+</div>
+ 
 @endsection
 
 
 @section('scripts')
 <script>
-    $(document).ready(function(){
-        AOS.init();
-        function toggleAccordion(id) {
+      function toggleAccordion(id) {
             var content = document.getElementById(id);
             var isOpen = content.classList.contains('open');
             
@@ -316,7 +318,10 @@
                 content.style.maxHeight = null;
             }
         }
-
+</script>
+<script>
+    $(document).ready(function(){
+        AOS.init();
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
             spaceBetween: 10,

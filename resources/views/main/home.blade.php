@@ -2,7 +2,6 @@
 @section('styles')
   <style>
     body {
-      /* background: #eee; */
       margin: 0;
       padding: 0;
     }
@@ -38,7 +37,7 @@
       position: absolute;
       z-index: 10;
       cursor: pointer;
-      background-color: rgba(255, 255, 255, 1); /* Semi-transparent background */
+      background-color: rgba(255, 255, 255, 1);
       width: 65px;
       height: 65px;
       border-radius: 50%;
@@ -52,7 +51,7 @@
 
     .custom-next:hover,
     .custom-prev:hover {
-      background-color: rgba(255, 255, 255, 0.8); /* Darker background on hover */
+      background-color: rgba(255, 255, 255, 0.8); 
     }
 
     .custom-next {
@@ -207,7 +206,7 @@
                 <div class=" flex items-center ">
                     <div class="w-8 h-8 bg-blue-600 text-white flex items-center justify-center rounded-full">
                         <!-- Icon 1 -->
-                        <i class="fas fa-laptop"></i> <!-- Example icon -->
+                        <i class="fas fa-laptop"></i> 
                     </div>
                     <span class="py-2 ml-4 text-black border-b-2 border-gray-200 border-opacity-50">Bisa jual online dan offline</span>
                 </div>
@@ -215,7 +214,7 @@
                 <div class="flex items-center">
                     <div class="w-8 h-8 bg-purple-600 text-white flex items-center justify-center rounded-full">
                         <!-- Icon 2 -->
-                        <i class="fas fa-chart-line"></i> <!-- Example icon -->
+                        <i class="fas fa-chart-line"></i> 
                     </div>
                     <span class="py-2 ml-4 text-black border-b-2 border-gray-200 border-opacity-50">Didesain untuk mengembangkan usaha Anda</span>
                 </div>
@@ -223,7 +222,7 @@
                 <div class="flex items-center">
                     <div class="w-8 h-8 bg-cyan-500 text-white flex items-center justify-center rounded-full">
                         <!-- Icon 3 -->
-                        <i class="fas fa-handshake"></i> <!-- Example icon -->
+                        <i class="fas fa-handshake"></i> 
                     </div>
                     <span class="py-2 ml-4 text-black border-b-2 border-gray-200 border-opacity-50">Tetap melayani yang terbaik setelah penjualan</span>
                 </div>
